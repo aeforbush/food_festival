@@ -1,0 +1,24 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeforbush/food_festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeforbush/food_festival/issues"
+  },
+  "homepage": "https://github.com/aeforbush/food_festival#readme",
+  "devDependencies": {
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
