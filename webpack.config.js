@@ -1,6 +1,7 @@
 
 const path = require("path");
 const  webpack  = require("webpack");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 
 // sets up the basic pieces to get up and running
@@ -18,6 +19,9 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
     }),
+    new BundleAnalyzerPlugin({
+        analyzerMode: "static", // the report outputs to an HTML file in the dist folder  // can also set to disable to stop
+    })
   ],
   // mode to run the webpack [default in production mode offers minify amplify] // webpack auto minifies code
   // development offers hot reloading and debugging
