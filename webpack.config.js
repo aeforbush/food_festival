@@ -9,7 +9,7 @@ module.exports = {
   // taking bundled code and sending to dist/ best practice
   output: {
     // resolve gets two arguments
-    path: path.resolve(__dirname, "dist"),
+    path: path.join(__dirname, "dist"),
     filename: "main.bundle.js",
   },
   // add plugins to direct webpack what to do
