@@ -1,4 +1,9 @@
-if (window.location.href.indexOf("event") > -1) {
+// Previously, these conditional statements checked if the current page was either events.html, tickets.html, or schedule.html so we could apply the correct DOM manipulation methods specific to that page.
+require('bootstrap');
+const createEl = require('./domMethods');
+const createLoremIpsum = require("./helpers");
+
+$(document).ready( function () {
   const currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
     title: "Title Placeholder",
     subtitle: "",
@@ -37,4 +42,4 @@ if (window.location.href.indexOf("event") > -1) {
     )
   );
   pageEl.appendChild(containerEl);
-}
+});
