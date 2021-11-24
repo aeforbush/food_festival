@@ -1,4 +1,4 @@
-const path = require("path");
+// const path = require("path");
 const webpack = require("webpack");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
@@ -6,6 +6,7 @@ const BundleAnalyzerPlugin =
 // sets up the basic pieces to get up and running
 module.exports = {
   entry: {
+      // relative paths
     app: "./assets/js/script.js",
     events: "./assets/js/events.js",
     schedule: "./assets/js/schedule.js",
@@ -14,7 +15,8 @@ module.exports = {
   // taking bundled code and sending to dist/ best practice
   output: {
     filename: "[name].bundle.js",
-    path:__dirname + "dist",
+    // __dirname absolute full path
+    path:__dirname + "/dist",
   },
   // add plugins to direct webpack what to do
   plugins: [
